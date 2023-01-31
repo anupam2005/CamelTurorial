@@ -1,0 +1,8 @@
+<routes xmlns="http://camel.apache.org/schema/spring">
+    <route id="xml-file-route">
+        <from uri="file:///tmp/in"/>
+        <log message="HEADER: ${headers}"/>
+        <log message="BODY: ${body}"/>
+        <to uri="file:///tmp/out"/>
+    </route>
+</routes>
